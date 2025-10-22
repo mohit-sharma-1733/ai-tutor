@@ -8,7 +8,7 @@ The project already contains a helper script to export its current state into a 
 ./scripts/export_to_new_repo.sh /path/to/your/new/repo
 ```
 
-* If you omit the target path, the repository is copied to `../ai-tutor-new` relative to this project.
+* If you omit the target path, the repository is copied to `../ai-video-call` relative to this project so it is ready to be pushed under that name.
 * The script skips existing `node_modules`, `.git`, `tmp`, and log directories, so the export stays clean.
 
 ## 2. Review the exported repository
@@ -25,7 +25,7 @@ If you need to add or remove files before pushing, make your changes and amend t
 
 ## 3. Add your remote and push
 
-Replace `<your-new-repo-url>` with the URL of the empty repository you created on your Git hosting service:
+Replace `<your-new-repo-url>` with the URL of the empty `ai-video-call` repository you created on your Git hosting service (for example, `git@github.com:your-org/ai-video-call.git`):
 
 ```bash
 git remote add origin <your-new-repo-url>

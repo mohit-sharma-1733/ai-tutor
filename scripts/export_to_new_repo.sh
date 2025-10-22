@@ -2,7 +2,8 @@
 set -euo pipefail
 
 SOURCE_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")"/.. && pwd)"
-DEFAULT_TARGET="${SOURCE_ROOT}/../ai-tutor-new"
+# default export directory matches the desired new repository name
+DEFAULT_TARGET="${SOURCE_ROOT}/../ai-video-call"
 TARGET_DIR="${1:-$DEFAULT_TARGET}"
 
 if [ -d "${TARGET_DIR}" ] && [ -n "$(find "${TARGET_DIR}" -mindepth 1 -maxdepth 1 -print -quit)" ]; then
